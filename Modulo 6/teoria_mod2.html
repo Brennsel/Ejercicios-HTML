@@ -1,0 +1,169 @@
+<!--
+    Enlaces
+
+    Etiqueta <a href ="enlace" texto></a>
+
+    URL - Uniform Resource Locator
+
+    Se compone de:
+    -Esquema: http:// (HyperText Transfer Protocol)
+             https://  (HyperText Transfer Protocol Secure)
+             ftp:// (File Transfer Protocol) 
+             file, mailto, etc.
+    -Nombre de dominio: www.google.com
+    -Ruta: /index.html
+    -Parametros: ?id=1&nombre=pepe
+               key=value
+
+    ATRIBUTOS:
+    -href: Indica la URL a la que apunta el enlace
+    -target: Indica donde se va a abrir el enlace
+            -blank: abre el enlace en una nueva pestaña
+            -self: abre el enlace en la misma pestaña
+            -parent: abre el enlace en la pestaña padre
+            -top: abre el enlace en la pestaña superior
+
+    -rel: Indica la relación entre el documento actual y el enlace
+        -nofollow: indica que el enlace no debe ser seguido por los robots de los buscadores
+        -noopener: indica que el enlace no debe permitir que el documento al que apunta acceda a la ventana que lo abrió
+        -noreferrer: indica que el enlace no debe permitir que el documento al que apunta acceda a la ventana que lo abrió y que no debe enviar el referer HTTP al documento al que apunta
+
+   -title: Indica el texto que se muestra al pasar el mouse por encima del enlace
+    
+   -------------------------------------------------
+   CSS
+
+   VINCULOS
+
+   Selector:psuedo-clase{
+         propiedad: valor;
+   }
+
+    Ejemplo:
+
+    #Cuando el mouse pasa por encima del enlace, el texto se pone rojo
+    a:hover{
+        color: red;
+    }
+
+    #Cuando el enlace está activo, el texto se pone verde
+    a.active{
+        color: green;
+    }
+
+    #Cuando el enlace está visitado, el texto se pone morado
+    a:link{
+        color: blue;
+    }
+
+    #Cuando el enlace está visitado, el texto se pone morado
+    a.visited{
+        color: purple;
+    }  
+
+    -------------------------------------------------
+
+    ALINEACION DE TEXTO
+
+    text-align: left | right | center | justify | initial | inherit;
+
+    -------------------------------------------------
+
+    TRANSFORMACION DE TEXTO
+
+    text-transform: none | capitalize | uppercase | lowercase | initial | inherit;
+
+    text-decoration: none | underline | overline | line-through | initial | inherit;
+
+    -------------------------------------------------
+
+    DISPLAY 
+    
+    block: el elemento se muestra como un bloque, ocupando todo el ancho disponible y comenzando en una nueva línea (h1, h2, etc, <p>, <div>, <li>, <ul>, <ol>, <table>, <form>, etc.)
+    
+    inline: el elemento se muestra como una línea, ocupando solo el espacio necesario y no comenzando en una nueva línea (span)
+    
+    inline-block: el elemento se muestra como un bloque, ocupando solo el espacio necesario y no comenzando en una nueva línea (span)
+    
+    none: el elemento no se muestra
+    
+    flex: el elemento se muestra como un bloque flexible (flexbox)
+    
+    grid: se ubican en cuadrículas, para mayor precision (grid)
+
+    inline-flex |  | inline-grid | | initial | inherit;
+
+    -------------------------------------------------
+
+    PROPIEDAD WIDTH (ANCHO)
+
+    especifica el ancho de un elemento. Funciona en elementos con display: block o inline-block
+
+    vh (viewport height) : representa una fraccion del alto visible del viewport
+    1vh= 1% del alto visible del viewport
+
+    vw (viewport width): representa una fraccion del ancho visible del viewport
+    1vw= 1% del ancho visible del viewport
+
+    400px, 500px.. 50%, 60%.. 1vh, 2vh.. 1vw, 2vw..
+
+    -------------------------------------------------
+
+    PROPIEDAD HEIGHT (ALTO)
+
+    Espesifica el alto de un elemento. Funciona en elementos con display: block o inline-block
+
+    -------------------------------------------------
+
+    PROPIEDAD MARGIN (MARGEN)
+
+    margin-top: 12px;
+    margin-right: px;
+    margin-bottom: px;
+    margin-left: px;
+
+    margin: 12px 12px 12px 12px; (top, right, bottom, left)
+    margin: 12px 12px 12px; (top, right-left, bottom)
+    margin: 12px 12px; (top-bottom, right-left)
+    margin: 12px; (top-right-bottom-left)
+
+    -------------------------------------------------
+
+    PROPIEDAD PADDING (RELLENO)	
+
+    padding-top: 12px;
+    padding-right: px;
+    padding-bottom: px;
+    padding-left: px;
+
+    padding: 12px 12px 12px 12px; (top, right, bottom, left)
+    padding: 12px 12px 12px; (top, right-left, bottom)
+    padding: 12px 12px; (top-bottom, right-left)
+    padding: 12px; (top-right-bottom-left)
+
+    -------------------------------------------------
+
+    PROPIEDAD BOX-SIZING (TAMAÑO DE CAJA)
+
+    permite especificar si el ancho y alto de un elemento incluye el padding y el border o no
+
+    content-box (por defecto): el ancho y alto del elemento no incluye el padding y el border
+    border-box (recomendado): el ancho y alto del elemento incluye el padding y el border
+
+    -------------------------------------------------
+
+    PROPIEDAD FONT-WEIGHT (GROSOR DE FUENTE)
+
+    normal: equivale a 400
+    bold: equivale a 700
+    lighter: la fuente sera mas liviana que el valor que tenia previamente especificado
+    bolder: la fuente sera mas pesada que el valor que tenia previamente especificado
+
+    -------------------------------------------------
+
+    PROPIEDAD FONT-STYE (ESTILO DE FUENTE)
+
+    normal: la fuente se muestra en estilo normal
+    italic: la fuente se muestra en estilo cursiva
+    oblique: la fuente se muestra en estilo oblicuo
+-->

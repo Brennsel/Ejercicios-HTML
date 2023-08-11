@@ -1,0 +1,138 @@
+Introduccion a GIT
+
+Git es sofware de control de versiones, que nos permite llevar un registro de los cambios que se realizan en un proyecto, y poder volver a versiones anteriores en caso de ser necesario.
+
+GIT --> global information tracker (seguidor global de información)
+
+REPOSITORIO --> lugar donde se almacena la información de un proyecto
+
+Espacio virtual donde se almacena la información de un proyecto, y se puede acceder a ella desde cualquier lugar.
+
+cuando integras un proyecto a un repositorio, se crea una copia de este en el repositorio, y se puede acceder a el desde cualquier lugar.
+se crea una carpeta oculta llamada <div class="git">
+    -objects/: referencias a los commits, ramas y etiquetas
+
+    -refs/: referencias a los commits, ramas y etiquetas
+
+    -HEAD: referencia a la rama actual
+
+    -config: configuración del repositorio
+
+    -description: descripción del repositorio
+
+    -index: lista de archivos que se van a subir al repositorio
+
+    -logs/: logs de cambios
+
+    -hooks/: scripts que se ejecutan ante eventos como recibir cambios, recibir push, etc.
+
+    -info/: información del repositorio
+
+    -packs/: archivos comprimidos con objetos de la base de datos
+
+    -branches/: ramas del repositorio
+
+    -remotes/: repositorios remotos
+
+    -commited: archivos que se han subido al repositorio
+
+    -staged: archivos que se han preparado para subir al repositorio
+
+    -modified: archivos que han sido modificados pero no se han preparado para subir al repositorio
+
+
+//Estados del repositorio:
+
+    -Untracked: archivos que no están siendo rastreados por git
+
+    -Unmodified: archivos que no han sido modificados
+
+    -Modified: archivos que han sido modificados pero no se han preparado para subir al repositorio
+
+    -Staged: archivos que han sido preparados para subir al repositorio
+
+    -Commited: archivos que han sido subidos al repositorio
+
+
+//Configuracion de GIT
+
+    /etc/gitconfig: configuración de todos los usuarios del sistema y todos los repositorios
+
+    .gitconfig: configuración de un usuario y todos sus repositorios
+
+    .git/config: configuración de un repositorio
+
+
+//Inicializar un repositorio
+
+    git init: inicializa un repositorio en la carpeta actual
+
+    git init <nombre>: inicializa un repositorio en la carpeta con el nombre especificado
+
+    git clone <url>: clona un repositorio remoto en la carpeta actual
+
+    git clone <url> <nombre>: clona un repositorio remoto en la carpeta con el nombre especificado
+
+
+    Para agregar archivos al STAGING AREA:
+    git add <nombre del archivo>
+    git add . --> agrega todos los archivos de la carpeta al staging area
+
+    Para agregar los archivos del staging area al repositorio:
+    git commit -m "mensaje del commit"
+
+    Para hacer el paso al staging Area y entregar los cambios a la vez:
+    git commit -am "mensaje del commit"
+
+    Para modificar el mensaje del utlimo commit:
+    git commit --amend -m "mensaje del commit"
+
+    para enviar los cambios al repositorio remoto:
+    git push origin <nombre de la rama>
+
+
+//LOGS
+
+    para ver el historial de commits:
+    git log
+
+    para ver el historial de commits en una sola linea:
+    git log --oneline
+
+    --graph: muestra el historial de commits en forma de grafo
+
+//GITHUB
+
+    creamos repositorio con el boton "new"
+
+    para sincronizar desde un terminal
+
+        1) Inicializar el repositorio (git init)
+        2) git remote add <alias> <url_del_repositorio> (como alias se usa origin)
+        3) git pull <alias> <rama> (para traer los cambios del repositorio remoto)
+
+    Si realizo cambios sobre un archivo:
+
+        1) git add <nombre del archivo>
+        2) git commit -m "mensaje del commit"
+        3) git push <alias> <rama>
+
+EJERCICIO:
+1) Crear un directorio en la maquina local e inicializar el repositorio
+2) Configurar GIT con nuestros datos de usuario de manera global para todo el sistema
+3) Configurar GIT con el mail que queremos usuario
+4) Crear un archivo nuevo en el directorio y darle seguimiento con Git
+5) Confirmar el nuevo archivo dentro de nuestro historial de commits
+6) Ver el log
+
+RESOLUCION:
+
+    1)  git init
+    2) git config --global user.name "nombre"
+    3) git config --global user.email "email"
+    4) git add <archivo>
+    5) git commit -m "primer commit"
+    6) git log
+
+cambiar nombre a las branches
+git branch -m <nombre actual> <nuevo nombre>

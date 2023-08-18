@@ -1,0 +1,51 @@
+Clonacion de repositorio
+ 
+    git clone
+    diferencia entre clone y fork:
+        es que el fork es una copia del repo en tu cuenta de github y 
+        el clone una copia del repo en tu pc
+
+    git clone <url>
+    
+    para saber que ramas existen dentro de un proyecto:
+        git branch -a
+
+Pull request: es una solicitud de cambios que se hace a un proyecto para que se integren los cambios que se hicieron en una rama de un fork
+
+    1) fork del proyecto para trabajar de forma local
+    2) crean una branch
+    3) realizar cambios
+    4) hacer commit y un push
+    5) crear un pull request
+    6) revision y discusion
+    7) aprovacion y merge
+    8) cierre del push request
+
+
+diferencia entre pull y fetch:
+    pull hace un fetch y un merge
+    fetch solo trae los cambios del repo remoto al repo local
+
+/////////////////////////////////////////////////////////
+
+Ejercicio 2:
+
+1)Ingresar a https://github.com/andresgiuffre/testrepo
+2) hacer un fork del repo
+3) clonar el repo en su pc
+4) modificar el README.md o agregar mas archivos
+5) hacer un add y commit, y luego un push a github
+6) crear un pull request para que se integren los cambios al repo original
+
+/////////////////////////////////////////////////////////
+
+git checkout -b <nombre de la rama> : crea una rama y se cambia a ella
+git switch -c <nombre de la rama> : crea una rama y se cambia a ella
+
+/////////////////////////////////////////////////////////
+
+ALERTA DE CONFLICTOS:
+
+    >git marge desarrollo
+    CONFLIC (content): Merge conflict in README.md
+    Automatic merge failed; fix conflicts and then commit the result.

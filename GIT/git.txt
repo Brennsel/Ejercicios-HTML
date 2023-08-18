@@ -136,3 +136,21 @@ RESOLUCION:
 
 cambiar nombre a las branches
 git branch -m <nombre actual> <nuevo nombre>
+
+///////////////////////////////////////////////////////////////////////
+CLASE 17/8 
+
+EJERCICIO 1: 
+Crear un nuevo reposito, agregar un archivo llamado README.md y 
+hacer el commit inicial.
+
+1)Editar el README.md y agregarle un texto. Hacer un commit al repositorio.
+
+2) Presentar el log actual del proyecto.
+
+RESOLUCION:
+
+
+
+
+
